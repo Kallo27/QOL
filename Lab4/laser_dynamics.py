@@ -28,7 +28,7 @@ def calculate_threshold(current, output_power):
 def plot_LI_curve(current, output_power, threshold_current, threshold_error):
   plt.figure(figsize=(8, 5))
   plt.scatter(current, output_power, label='LI curve')
-  plt.axvline(threshold_current, color='r', linestyle='--', label=f'Threshold: {threshold_current:.4f} +/- {threshold_error:.4f} mA')
+  plt.axvline(threshold_current, color='r', linestyle='--', label=f'Threshold: {threshold_current:.4f} +/- {threshold_error:.4f} A')
   plt.xlabel('Current [A]')
   plt.ylabel('Output power [W]')
   plt.legend()
